@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="135dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="25dp"
+        android:text="Bluetooth ON" />
+
+    <Button
+        android:id="@+id/off"
+        android:layout_width="135dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="25dp"
+        android:allowUndo="false"
+        android:text="Bluetooth OFF" />
+
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="47dp"
+        android:layout_weight="0.1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Status:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bluetoothStatus"
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="47dp"
+        android:layout_weight="0.9"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Bluetooth Status" />
+
+    <ListView
+        android:id="@+id/devicesListView"
+        android:layout_width="347dp"
+        android:layout_height="157dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginRight="195dp"
+        android:choiceMode="singleChoice" />
+
+
+    <Button
+        android:id="@+id/forward"
+        android:layout_width="200dp"
+        android:layout_height="192dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="252dp"
+        android:background="@drawable/ic_arrow_upward_black_24dp"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></Button>
+
+    <Button
+        android:id="@+id/reverse"
+        android:layout_width="188dp"
+        android:layout_height="185dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="376dp"
+        android:layout_marginBottom="81dp"
+        android:background="@drawable/ic_arrow_downward_black_24dp"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></Button>
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="188dp"
+        android:layout_height="185dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="228dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="186dp"
+        android:background="@drawable/ic_arrow_forward_black_24dp"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="@+id/left"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></Button>
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="188dp"
+        android:layout_height="185dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="184dp"
+        android:background="@drawable/ic_arrow_back_black_24dp"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></Button>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="98dp"
+        android:layout_height="131dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-19dp"
+        android:layout_marginBottom="619dp"
+        app:srcCompat="@drawable/ic_bluetooth_black_24dp" />
+
+</RelativeLayout>
